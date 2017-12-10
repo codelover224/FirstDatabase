@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hp.firstdatabase.MainActivity">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/idText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID"
+        android:textColorHint="#000"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NAME"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#000"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/to_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/marksText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="MARKS"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#000"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/insertBtn"
+        android:text="INSERT"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:background="#CF00"
+        android:layout_weight="1"
+        android:onClick="insertClick"
+        android:layout_marginTop="80dp"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="#FFF">
+        </View>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/readBtn"
+        android:text="READ"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:background="#CF00"
+        android:onClick="readClick"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="#FFF">
+        </View>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/updateBtn"
+        android:text="UPDATE"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:background="#CF00"
+        android:onClick="updateClick"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="#FFF">
+        </View>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deleteBtn"
+        android:text="DELETE"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:background="#CF00"
+        android:onClick="delClick"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:textStyle=""/>
+
+</LinearLayout>
+
+    </ScrollView>
