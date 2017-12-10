@@ -31,8 +31,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS" + TABLE_NAME);
-
+        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
     }
 
     public boolean insertData(String name, String marks) {
